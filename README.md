@@ -48,10 +48,31 @@
 
 ## DIFF
 
-- 按需加载
+- 按需加载 KeenUI中一个组件中依赖别的组件时，单组件打包会把别的组件一起打包，导致包体积十分大。
 - 服务端渲染
 - 自定义主题
 
 ## need
 
 - webpack
+
+## Question
+
+### KeenUI 单组件包体积问题
+
+mint-ui 解决了这个问题。参考：lerna
+
+如果在 webpack 项目下，可以不打包，仅仅指导使用者，如何引入，压缩。
+像现在大部分，都会使用 webpack
+
+在不使用webpack，并且仅仅使用部分包的时候怎么处理 ？
+
+减少组件间的隐式依赖
+
+
+## css
+
+https://www.w3cplus.com/PostCSS/using-postcss-with-bem-and-suit-methodologies.html
+
+
+
